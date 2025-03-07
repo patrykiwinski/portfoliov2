@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(163, 162, 162);
+        }
+        .btn {
+            width: 20em;
+            text-align: center;
+            background: var(--button-gradient), var(--button-background-url);
+            background-size: var(--button-background-size);
+            background-position: 0%;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.5em;
+            padding: 3em 4em;
+            transition: background-position 0.3s;
+            border-radius: 15px; 
+            border: #000000 0.2em solid; //dd
+        }
+        .btn:hover {
+            background-position: 75%;
+            transition: background-position 3s;
+        }
+        .portfolio-container {
+            padding-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <main>
+    
+        <div style="padding-top: 2em;">
+            <button class="btn" style=
+            "
+            --button-background-size: 200% 400%;
+            --button-gradient: linear-gradient(135deg, #000000 0%, transparent 0%); 
+             --button-background-url: url('assets/galaxy/gal3.png');" 
+             onclick="location.href='galaxy.html'">
+             View Galaxy Blender
+            </button>
+        </div>
+
+        <div style="padding-top: 2em;">
+            <button class="btn" style=
+            "
+            --button-background-size: 200% 400%;
+            --button-gradient: linear-gradient(135deg, #000000 0%, transparent 0%); 
+             --button-background-url: url('assets/kule/kula.png');" 
+             onclick="location.href='kule.html'">
+             View BALL Blender
+            </button>
+        </div>
+        <div style="padding-top: 2em;">
+            <button class="btn" style=
+            "
+            --button-background-size: 200% 400%;
+            --button-gradient: linear-gradient(135deg, #dbd7d7 10%, transparent 50%); 
+             --button-background-url: url('assets/random/coś\ 1png.png');" 
+             onclick="location.href='random.html'">
+              random blender
+            </button>
+        </div>
+
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
