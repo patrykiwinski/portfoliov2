@@ -6,6 +6,39 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    }
+
+    .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    }
+
+    .portfolio-item {
+    margin: 1em;
+    max-width: 300px;
+    }
+
+    .portfolio-item img,
+    .portfolio-item video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
         body {
             background-color: rgb(163, 162, 162);
         }
@@ -30,6 +63,15 @@
         }
         .portfolio-container {
             padding-bottom: 2em;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
         }
     </style>
 </head>
@@ -70,9 +112,8 @@
               random blender
             </button>
         </div>
-
+       
     </main>
-    <script src="scripts.js"></script>
+    <footer>Patryk I.</footer>
 </body>
 </html>
-

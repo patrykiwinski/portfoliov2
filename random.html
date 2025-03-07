@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .portfolio-container {
-            display: flex; //test
+            display: flex; 
             
             flex-wrap: wrap;
             justify-content: center;
@@ -48,6 +48,15 @@
             transform: rotate(180deg);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -60,14 +69,14 @@
             <div class="portfolio-item"
              onmouseover="scaleUp(this); this.style.cursor='pointer'"
               onmouseout="scaleDown(this); this.style.cursor='default'"
-               onclick="openFullscreen('assets/random/coś 1png.png')">
+               onclick="window.open('assets/random/coś 1png.png')">
                 <img src="assets/random/coś 1png.png
                 " alt="Galaxy Image 1">
             </div>
             <div class="portfolio-item"
              onmouseover="scaleUp(this); this.style.cursor='pointer'"
               onmouseout="scaleDown(this); this.style.cursor='default'"
-               onclick="openFullscreen('assets/random/PROMISE.png')">
+               onclick="window.open('assets/random/PROMISE.png')">
                 <img src="assets/random/PROMISE.png" alt="Galaxy Image 2">
             </div>
            
@@ -77,7 +86,7 @@
             <div class="portfolio-item"
             onmouseover="scaleUp(this); this.style.cursor='pointer'"
              onmouseout="scaleDown(this); this.style.cursor='default'"
-              onclick="openFullscreen('assets/random/ta.png')">
+              onclick="window.open('assets/random/ta.png')">
                <img src="assets/random/ta.png" alt="Galaxy Image 3">
            </div>
 
@@ -125,10 +134,6 @@
         </div>
         
             
-        <div class="fullscreen" id="fullscreen">
-            <div class="close-button" onclick="closeFullscreen()">×</div>
-            <img src="" alt="Galaxy Image" style="width: 100%; height: 100%; object-fit: cover;" id="fullscreen-image">
-        </div>
     </main>
     <script>
         function scaleUp(element) {
@@ -138,14 +143,9 @@
         function scaleDown(element) {
             element.style.transform = 'scale(1)';
         }
-        function openFullscreen(url) {
-            document.getElementById("fullscreen").style.display = "block";
-            document.getElementById("fullscreen-image").src = url;
-        }
-        function closeFullscreen() {
-            document.getElementById("fullscreen").style.display = "none";
-        }
+        
     </script>
+    <footer>Some of the renders are inspired by or taken from tutorials available on YouTube.</footer>
 </body>
 </html>
 

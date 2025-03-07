@@ -12,7 +12,15 @@
             justify-content: center;
             padding: 1em;
         }
-
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
         body {
             background-color: rgb(163, 162, 162);
         }
@@ -90,14 +98,9 @@
         function scaleDown(element) {
             element.style.transform = 'scale(1)';
         }
-        function openFullscreen(url) {
-            document.getElementById("fullscreen").style.display = "block";
-            document.getElementById("fullscreen-image").src = url;
-        }
-        function closeFullscreen() {
-            document.getElementById("fullscreen").style.display = "none";
-        }
+       
     </script>
 </body>
+<footer>Some of the renders are inspired by or taken from tutorials available on YouTube.</footer>
 </html>
 
